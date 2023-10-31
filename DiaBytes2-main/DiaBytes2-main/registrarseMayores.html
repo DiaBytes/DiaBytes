@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/LogoUno.png">
+    <title>Registrarse</title>
+</head>
+<body>
+    <h1>REGISTRARSE</h1>
+    <section>
+        <fieldset>
+            <form action="#">
+                <!--Registros-->
+                <!--Nombre-->
+                <label for="nameResgister">Nombres</label><br>
+                <input type="text" name="nameResgister" id="nameResgister" required autofocus><br>
+                <!--Apellido-->
+                <label for="apellidoRegister">Apellidos</label><br>
+                <input type="text" name="apellidoRegister" id="apellidoRegister" required><br>
+                <!--Usuario-->
+                <label for="userRegister">Usuario</label><br>
+                <input type="text" name="userRegister" id="userRegister" required><br>
+                <!--Contraseññas-->
+                <label for="password">Contraseña</label><br>
+                <input type="password" name="password" id="password" required><br>
+                <!--Correo-->
+                <label for="correo">Correo Electronico</label><br>
+                <input type="email" name="correo" id="correo" required> <br>
+                <!--TipoEps-->
+                <label for="eps">Escoja su EPS</label><br>
+                <select name="eps" id="eps" required>
+                    <option value="" selected>Seleccione una EPS</option>
+                    <option value="NuevaEps">Nueva Eps</option>
+                    <option value="Sanitas">Sanitas</option>
+                    <option value="Sura">Sura</option>
+                    <option value="Salud_Total">Salud Total</option>
+                    <option value="Coosalud">Coosalud</option>
+                    <option value="Compensar">Compensar</option>
+                </select><br>
+                <!--Tipo de Sangre-->
+                <label for="tipoSangre">Tipo de Sangre</label><br>
+                <input type="text" name="tipoSangre" id="tipoSangre" required><br>
+                <!--Tipo de Diabetes-->
+                <label for="tipoDiabetes">Tipo de Diabetes</label><br>
+                <input type="radio" name="tipoDiabetes" id="tipoUno" value="tipoUno" required>
+                <label for="tipoDos">Tipo Uno</label>
+                <input type="radio" name="tipoDiabetes" id="tipoDos" value="tipoDos" required>
+                <label for="tipoUno">Tipo Dos</label><br>
+                <!--Dirrecion-->
+                <label for="direccion">Dirección</label><br>
+                <input type="text" name="direccion" id="direccion" required><br>
+                <!--Numero identificacion-->
+                <label for="numeroIdentificacion">Número de Identificación</label><br>
+                <input type="number" name="numeroIdentificacion" id="numeroIdentificacion" required><br>
+                <!--Fecha Nacimiento-->
+                <label for="nacimiento">Fecha de Nacimiento</label><br>
+                <input type="date" name="nacimiento" id="nacimiento" ><br>
+                <!--edad-->
+                <label for="edad">Edad</label><br>
+                <input type="number" name="edad" id="edad" required><br>
+                <!--Numero telefonico-->
+                <label for="numeroTelefono">Número Telefono</label><br>
+                <input type="number" name="numeroTelefono" id="numeroTelefono" required><br><br>
+
+                <!--Contacto de Emergencia-->
+                <h2>Contacto de Emergencia</h2><br>
+                <label for="nombreContactoEmergencia">Nombre Completo</label><br>
+                <input type="text" name="nombreContactoEmergencia" id="nombreContactoEmergencia"><br>
+                <label for="numeroContactoEmergencia">Número Telefonico</label><br>
+                <input type="number" name="numeroContactoEmergencia" id="numeroContactoEmergencia"><br> <br>
+
+
+                <br>
+                <input type="submit" value="Guardar">
+            </form>
+        </fieldset>
+        <br><br>
+        <a href="inicioSecion.html">Click Aqui para Iniciar Sesión</a>
+    </section>
+</body>
+</html>

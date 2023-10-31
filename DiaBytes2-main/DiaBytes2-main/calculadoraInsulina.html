@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/LogoUno.png">
+  <title>Calculadora de Insulina</title>
+  <script>
+    function calcularInsulina() {
+      var carbohidratos = parseFloat(document.getElementById("carbohidratos").value);
+      var ratioInsulina = parseFloat(document.getElementById("ratio").value);
+      var resultado = carbohidratos / ratioInsulina;
+      
+      document.getElementById("resultado").innerHTML = "Debe aplicarse " + resultado.toFixed(2) + " unidades de insulina.";
+    }
+  </script>
+</head>
+<body>
+  <h1>Calculadora de Insulina</h1>
+  
+
+  <fieldset>
+    <label for="carbohidratos">Cantidad de carbohidratos (gramos):</label>
+    <input type="number" id="carbohidratos" required><br><br>
+    
+    <label for="ratio">Ratio de insulina (gramos por unidad):</label>
+    <input type="number" id="ratio"><br><br>
+    
+    <button onclick="calcularInsulina()">Calcular</button>
+    
+    <h2 id="resultado"></h2>
+  </fieldset>
+  
+</body>
+</html>

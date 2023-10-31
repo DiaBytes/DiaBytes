@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Pagina inicio de Sesión*/
+
+.titulo{
+    background-color: #004bac;
+    display: flex;
+    color: white;
+    padding: 0% 2%;
+    margin: 0%;
+    border: 0%;
+
+}
+.titulo1{
+    padding: 0 3%;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #3483bb;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+}
+.encaje1{
+    color:#004bac;
+    background-color: #79bfea;
+    width: 40%;
+    margin: 3% 30%;
+    padding : 3% 0% 3% 0%;
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+.encaje1 a{
+    text-decoration: none;
+}
+
+.botonSesion{
+    background-color: #004bac;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left: 15px;
+    padding-right:15px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:35px;
+    border-color: #004bac;
+}
+.cajaBlanca{
+    border-radius: 80px;
+    border-color: white;
+
+}
