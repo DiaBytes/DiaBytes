@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/estilo.css">
+    <link rel="icon" href="Images/LogoUno.png">
+  <title>Calculadora de Insulina</title>
+  <script>
+    function calcularInsulina() {
+      var carbohidratos = parseFloat(document.getElementById("carbohidratos").value);
+      var ratioInsulina = parseFloat(document.getElementById("ratio").value);
+      var resultado = carbohidratos / ratioInsulina;
+      
+      document.getElementById("resultado").innerHTML = "Debe aplicarse " + resultado.toFixed(2) + " unidades de insulina.";
+    }
+  </script>
+</head>
+<body>
+
+<div class="titulo">
+  <img src="Images/LogoUno.png" alt="Logo" width="100px">
+  <h1 class="titulo1">DiaBytes</h1>
+</div>
+
+
+<div class="CalculadoraUno">
+  <div >
+    <div class="tituloCalculadora">  
+      <h1>Calculadora de Insulina</h1>
+      <br><br>
+    </div>
+    <div class="CalculadoraIn">
+      <br><br>
+      <label for="carbohidratos">Cantidad de carbohidratos (gramos):</label>
+      <input class="cajaBlancaIS" type="number" id="carbohidratos" required><br><br>
+      
+      <label for="ratio">Ratio de insulina (gramos por unidad):</label>
+      <input class="cajaBlancaIS" type="number" id="ratio"><br><br>
+      
+      <button class="botonUno" onclick="calcularInsulina()">Calcular</button>
+      
+      <h2 id="resultado"></h2>
+    </div>
+      
+  </div>
+  
+    
+    <!--Menu derecha-->
+    <div>
+      <div class="totalMenu">
+        <!--Diabetes informacion-->
+        <div class="menuIzquierda">
+            <h4>Diabetes</h4>
+            <div>
+              <h5 class="menuchico"> <a href="#queesdiabetes">¿Que es diabetes?</a></h5>
+              <h5 class="menuchico"> <a href="#causas">Causas y Concecuencias de la Diabetes</a></h5>
+              <h5 class="menuchico"><a href="#Tratamiento">Tratamiento</a></h5>
+
+            </div>
+
+        </div>
+        <!--COntrol calculadora-->
+        <div class="menuIzquierda">
+            <h4>Control</h4>
+            <div> 
+              <h5 class="menuchico"> <a href="calculadoraInsulina.html">Calculadora</a></h5>
+            </div>
+
+        </div>
+        <!--perfil iniciar registrarse-->
+        <div class="menuIzquierda">
+            <h4>Perfil</h4>
+            <div class="MenuTipoA">
+              <h5 class="menuchico"> <a href="tipodeRegistro.html"> Registrarse</a> </h5>
+              <h5 class="menuchico"> <a href="inicioSecion.html">Iniciar Sesión</a></h5>
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
+  
+</body>
+</html>

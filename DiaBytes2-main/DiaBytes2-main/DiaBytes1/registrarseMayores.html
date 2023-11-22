@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/LogoUno.png">
+    <link rel="stylesheet" href="Estilos/estilo.css">
+    <title>Registrarse</title>
+</head>
+<body>
+    <div class="titulo">
+        <img src="Images/LogoUno.png" alt="Logo" width="100px">
+        <h1 class="titulo1">DiaBytes</h1>
+    </div>
+    
+
+
+
+    <h1>REGISTRARSE</h1>
+    <section>
+        
+            <form action="#">
+                <div class="total">
+                    <!--Registros-->
+                
+                <!--Parte1-->
+                <div class="Izquierda">
+                    <!--Nombre-->
+                    <label for="nameResgister">Nombres</label><br>
+                    <input class="cajaBlanca" type="text" name="nameResgister" id="nameResgister" required autofocus><br><br>
+                    <!--Apellido-->
+                    <label for="apellidoRegister">Apellidos</label><br>
+                    <input class="cajaBlanca" type="text" name="apellidoRegister" id="apellidoRegister" required><br><br>
+                    <!--Usuario-->
+                    <label for="userRegister">Usuario</label><br>
+                    <input class="cajaBlanca" type="text" name="userRegister" id="userRegister" required><br><br>
+                    <!--Contraseñas-->
+                    <label for="password">Contraseña</label><br>
+                    <input  class="cajaBlanca"type="password" name="password" id="password" required><br><br>
+                    <!--Correo-->
+                    <label for="correo">Correo Electronico</label><br>
+                    <input class="cajaBlanca" type="email" name="correo" id="correo" required> <br><br>
+                    <!--TipoEps-->
+                    <label for="eps">Escoja su EPS</label><br>
+                    <select  class="cajaBlanca"     name="eps" id="eps" required>
+                        <option value="" selected>Seleccione una EPS</option>
+                        <option value="NuevaEps">Nueva Eps</option>
+                        <option value="Sanitas">Sanitas</option>
+                        <option value="Sura">Sura</option>
+                        <option value="Salud_Total">Salud Total</option>
+                        <option value="Coosalud">Coosalud</option>
+                        <option value="Compensar">Compensar</option>
+                    </select><br><br>
+                    <!--Tipo de Sangre-->
+                    <label for="tipoSangre">Tipo de Sangre</label><br>
+                    <input   class="cajaBlanca" type="text" name="tipoSangre" id="tipoSangre" required><br><br>
+                    <!--Tipo de Diabetes-->
+                    <label for="tipoDiabetes">Tipo de Diabetes</label><br><br>
+                    <input type="radio" name="tipoDiabetes" id="tipoUno" value="tipoUno" required>
+                    <label for="tipoDos">Tipo Uno</label>
+                    <input type="radio" name="tipoDiabetes" id="tipoDos" value="tipoDos" required>
+                    <label for="tipoUno">Tipo Dos</label><br><br>
+                    <!--Dirrecion-->
+                    <label for="direccion">Dirección</label><br>
+                    <input  class="cajaBlanca" type="text" name="direccion" id="direccion" required><br>
+                </div>
+
+                <div class="Derecha">
+                    <!--Parte2-->
+                    <!--Numero identificacion-->
+                    <label for="numeroIdentificacion">Número de Identificación</label><br>
+                    <input   class="cajaBlanca" type="number" name="numeroIdentificacion" id="numeroIdentificacion" required><br><br>
+                    <!--Fecha Nacimiento-->
+                    <label for="nacimiento">Fecha de Nacimiento</label><br>
+                    <input   class="cajaBlanca" type="date" name="nacimiento" id="nacimiento" ><br><br>
+                    <!--edad-->
+                    <label for="edad">Edad</label><br>
+                    <input   class="cajaBlanca" type="number" name="edad" id="edad" required><br><br>
+                    <!--Numero telefonico-->
+                    <label for="numeroTelefono">Número Telefono</label><br>
+                    <input  class="cajaBlanca" type="number" name="numeroTelefono" id="numeroTelefono" required><br><br>
+
+                    <!--Contacto de Emergencia-->
+                    <h2>Contacto de Emergencia</h2>
+                    <label for="nombreContactoEmergencia">Nombre Completo</label><br>
+                    <input  class="cajaBlanca" type="text" name="nombreContactoEmergencia" id="nombreContactoEmergencia"><br><br>
+                    <label for="numeroContactoEmergencia">Número Telefonico</label><br>
+                    <input  class="cajaBlanca" type="number" name="numeroContactoEmergencia" id="numeroContactoEmergencia"><br> <br><br>
+
+
+                    <br>
+                    <input  class="botonUno" type="submit" value="Guardar">
+                </div>
+
+                </div>
+                
+            </form>
+        <br><br>
+        <a class="botonUno" href="inicioSecion.html">Click Aqui para Iniciar Sesión</a>
+    </section>
+</body>
+</html>
